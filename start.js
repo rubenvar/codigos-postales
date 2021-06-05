@@ -8,7 +8,11 @@ const app = express();
 
 // routes
 app.get('/', (req, res) =>
-  res.json({ status: 'ok', version: packageJson.version })
+  res.json({
+    status: 'ok',
+    version: packageJson.version,
+    readme: 'https://github.com/rubenvar/codigos-postales',
+  })
 );
 
 app.get('/api/cp/:cp', async (req, res) => {

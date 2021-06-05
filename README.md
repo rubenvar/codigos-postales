@@ -4,7 +4,7 @@
 
 Por ahora, una app simple que devuelve el código de municipio para un código postal.
 
-Los datos están sacados de [esta repo](https://github.com/inigoflores/ds-codigos-postales-ine-es/), sacados a su ver del INE.
+Los datos están sacados de [esta repo](https://github.com/inigoflores/ds-codigos-postales-ine-es/) (gracias), sacados a su ver del INE.
 
 ## Acceso
 
