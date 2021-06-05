@@ -1,5 +1,6 @@
 const express = require('express');
 const fs = require('fs');
+const cors = require('cors');
 const parse = require('csv-parse/lib/sync');
 const packageJson = require('./package.json');
 
@@ -15,7 +16,7 @@ app.get('/', (req, res) =>
   })
 );
 
-app.get('/api/cp/:cp', async (req, res) => {
+app.get('/api/cp/:cp', cors(), async (req, res) => {
   const { cp } = req.params;
 
   const data = fs.readFileSync('./assets/codigos_postales_municipios.csv', {
