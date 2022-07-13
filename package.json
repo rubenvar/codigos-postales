@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "nodemon start.js",
-    "start": "node start.js"
+    "start": "node start.js",
+    "lint": "prettier --check . && eslint .",
+    "format": "prettier --write ."
   },
   "dependencies": {
     "cors": "^2.8.5",
