@@ -1,8 +1,7 @@
-const express = require('express');
-const fs = require('fs');
-const cors = require('cors');
-const parse = require('csv-parse/lib/sync');
-const packageJson = require('./package.json');
+import express from 'express';
+import fs from 'fs';
+import cors from 'cors';
+import { parse } from 'csv-parse/sync';
 
 // start
 const app = express();
@@ -11,7 +10,7 @@ const app = express();
 app.get('/', (req, res) =>
   res.json({
     status: 'ok',
-    version: packageJson.version,
+    version: process.env.npm_package_version,
     readme: 'https://github.com/rubenvar/codigos-postales',
   })
 );
