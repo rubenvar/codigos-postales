@@ -2,9 +2,11 @@
 
 ## ¿Qué es esto?
 
-Por ahora, una app simple que devuelve el código de municipio para un código postal.
+Por ahora, una app simple que devuelve el **código de municipio** para un código postal.
 
-Los datos están sacados de [esta repo](https://github.com/inigoflores/ds-codigos-postales-ine-es/) (gracias), sacados a su ver del INE.
+Los datos están sacados de [esta repo](https://github.com/inigoflores/ds-codigos-postales-ine-es/) (gracias), sacados a su vez del INE, y guardados en `csv` en esta misma app.
+
+Si en algún momento están *un poco* desactualizados, [puedes avisarme](https://github.com/rubenvar/codigos-postales/issues) para que lo mire.
 
 ## Acceso
 
@@ -16,10 +18,10 @@ Las respuestas son todas JSON.
 
 Las únicas rutas disponibles por ahora son estas:
 
-| Ruta               | Params                  | Resp                |
-| ------------------ | ----------------------- | ------------------- |
-| '/'                | -                       | status, version     |
-| '/api/cp/{params}' | Código Postal (string)  | Código de Municipio |
+| Ruta               | Params                  | Resp                         |
+| ------------------ | ----------------------- | ---------------------------- |
+| '/'                | -                       | status, version              |
+| '/api/cp/{params}' | Código Postal (string)  | Nombre y Código de Municipio |
 
 ## ¿Futuro?
 
